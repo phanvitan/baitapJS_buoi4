@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="container">
+  
+    <div class="col-6 py-5">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header text-white bg-primary text-center">
+          Sắp xếp thứ tự từ nhỏ đến lớn
+        </div>
+        <div class="card-body">
+          <form>
+            <p>Số thứ nhất :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="input1" placeholder="Điền số">
+            </div>
+            <p>Số thứ hai :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="input2" placeholder="Điền số">
+            </div>
+            <p>Số thứ ba :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="input3" placeholder="Điền số">
+            </div>
+            
+            <button onclick="calcSXTT();" type="button" class="btn btn-danger" id="btnSXTT">SX Thứ Tự</button>
+            <p id="txtResultSXTT"></p>
+          </form>
+
+       
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 py-5">
+      <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+          <form>
+            <p style="color: blue; font-size: larger;">Chào các members trong GĐ:</p>
+            
+            <div class="form-group">
+              <select class="form-control" id="selectPerson">
+                <option value="Người Lạ">Chọn thành viên</option>
+                <option value="Bố">Bố</option>
+                <option value="Mẹ">Mẹ</option>
+                <option value="Anh Trai">Anh Trai</option>
+                <option value="Em Gái">Em Gái</option>
+              </select>
+            </div>
+            
+            <!-- <button class="btn btn-danger" id="btnCalc">Tính nào</button> -->
+            <!-- Solution: C1: đổi type thành button -->
+            <!-- Gắn sự kiện(event) click bằng thuộc tính của html -->
+            <button onclick="calcHELLO();" type="button" class="btn btn-danger" id="btnCalc">Gửi Lời Chào</button>
+            <p id="txtResultHELLO"></p>
+          </form>
+
+       
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 py-5">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header text-white bg-warning text-center">
+          Đếm bao nhiêu số chẵn/lẻ
+        </div>
+        <div class="card-body">
+          <form>
+            <p>Số thứ nhất :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputNum1" placeholder="Điền số">
+            </div>
+            <p>Số thứ hai :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputNum2" placeholder="Điền số">
+            </div>
+            <p>Số thứ ba :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputNum3" placeholder="Điền số">
+            </div>
+            
+            <button onclick="calcChanle();" type="button" class="btn btn-danger" id="btnChanle">Đếm Nào</button>
+            <p id="txtResultChanle"></p>
+          </form>
+
+       
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 py-5">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header text-white bg-primary text-center">
+          Xác định loại hình tam giác
+        </div>
+        <div class="card-body">
+          <form>
+            <p>Cạnh thứ nhất :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="canh1" placeholder="Điền số">
+            </div>
+            <p>Cạnh thứ hai :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="canh2" placeholder="Điền số">
+            </div>
+            <p>Cạnh thứ ba :</p>
+            <div class="form-group">
+              <input type="text" class="form-control" id="canh3" placeholder="Điền số">
+            </div>
+            
+            <button onclick="calcTAMGIAC();" type="button" class="btn btn-danger" id="btnTAMGIAC">Click Here</button>
+            <p id="txtResultTAMGIAC"></p>
+          </form>
+
+       
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- Main JS -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
